@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Event Banner */
+        .banner {
+            background: linear-gradient(135deg, #2563eb, #9333ea);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Registration Button */
+        .btn {
+            display: inline-block;
+            background: #facc15;
+            color: #172554;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Schedule Section */
+        .schedule {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .schedule h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #172554;
+        }
+
+        /* Flexbox Layout */
+        .schedule-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .event-card {
+            background: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .event-card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .event-card p {
+            line-height: 1.6;
+        }
+
+        /* Registration Section */
+        .registration {
+            text-align: center;
+            padding: 40px 20px;
+            background: #dbeafe;
+        }
+
+        .registration h2 {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+
+            .banner {
+                padding: 55px 15px;
+            }
+
+            .banner h1 {
+                font-size: 28px;
+            }
+
+            .banner p {
+                font-size: 15px;
+            }
+
+            .schedule h2 {
+                font-size: 24px;
+            }
+
+            .schedule-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-card {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>ABC College</h2>
+        <p>Annual Technical Fest 2026</p>
+    </header>
+
+    <section class="banner">
+        <h1>TECH FEST 2026</h1>
+        <p>Explore Innovation, Technology and Creativity!</p>
+        <p>📅 November 25, 2026 | 📍 ABC College Campus</p>
+
+        <a href="#register" class="btn">Register Now</a>
+    </section>
+
+    <section class="schedule">
+        <h2>Event Schedule</h2>
+
+        <div class="schedule-container">
+
+            <div class="event-card">
+                <h3>09:00 AM</h3>
+                <h4>Inauguration</h4>
+                <p>Welcome ceremony and inauguration of the technical fest.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>10:30 AM</h3>
+                <h4>Technical Events</h4>
+                <p>Coding competition, paper presentation and quiz.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>01:00 PM</h3>
+                <h4>Lunch Break</h4>
+                <p>Lunch and networking with fellow students.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>02:00 PM</h3>
+                <h4>Cultural Events</h4>
+                <p>Dance, music, games and entertainment programs.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="registration" id="register">
+        <h2>Join Our Event!</h2>
+        <p>Don't miss this exciting opportunity.</p>
+        <br>
+        <a href="mailto:events@abccollege.edu"
+           class="btn">Register Now</a>
+    </section>
+
+    <footer>
+        <p>© 2026 ABC College | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
